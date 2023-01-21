@@ -3,7 +3,7 @@ import pandas as pd
 import os
 import sys
 
-data_folder = "../data"
+data_folder = "../anonymous_data"
 
 
 # Random orders (with constraints) of questions
@@ -553,7 +553,8 @@ def calculate_bonus(user_question_order, usertask_dict, answer_dict):
 	return bounus_list
 
 if __name__ == "__main__":
-	filename = "DKE_tut_xai_batch4.csv"
+	# filename = "DKE_tut_xai_batch4.csv"
+	filename = "all_valid_data.csv"
 	valid_users, approved_users = find_valid_users(filename, 4)
 	user_condition_dict = get_user_conditions(filename, valid_users)
 	answer_dict = load_answers()
