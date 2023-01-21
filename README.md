@@ -14,6 +14,19 @@ The dazzling promises of AI systems to augment humans in various tasks hinge on 
 - scipy
 - pingouin
 
+## Data processing
+All user interaction data is anonymized, saved in anonymous_data/all_valid_data.csv.
+All tasks are saved in anonymous_data/selected_samples.csv
+Specifically, our data is preprocessed with functions in util.py in data_analysis folder.
+all_valid_data.csv have several types of keys to record different information:
+* user ID: username
+* experimental condition: tutorial, XAI
+* question order: question_order
+* user initial decision : questionx (x in 0-17)
+* user decision after advice: advicex (x in 0-17)
+* attention check: attention_ati, attention6, attention11, attention18
+* Questionnaire : surveySelf1, surveySelf2, surveyOther1, surveyOther2, surveyPercentage1, surveyPercentage2
+
 ## Data analysis
 Our main experimental results can be reimplemented with code in folder data_analysis. All experimental results can be obtained with executing these python files with `python xx.py`
 * Section 5.1   : analysis_time_new.py, descriptive_statistics_new.py, explanation_usefulness.py, normal_distribution_analysis.py
@@ -23,18 +36,6 @@ Our main experimental results can be reimplemented with code in folder data_anal
 * Section 5.2.4 : analysis_H4_new.py, analysis_H4_new_anova.py
 * Section 5.3   : analysis_DKE_new.py
 * Section 5.3   : analysis_trust_new.py
-
-## Data processing
-Specifically, our data is preprocessed with functions in util.py in data_analysis folder.
-We have several types of keys to record different information:
-* user ID: username
-* experimental condition: tutorial, XAI
-* question order: question_order
-* user initial decision : questionx (x in 0-17)
-* user decision after advice: advicex (x in 0-17)
-* attention check: attention_ati, attention6, attention11, attention18
-* Questionnaire : surveySelf1, surveySelf2, surveyOther1, surveyOther2, surveyPercentage1, surveyPercentage2
-
 
 ## Web interface
 Our interface is implemented with Flask, you can refer to [this repo](https://github.com/LucieKuiper/Thesis) for more details.
