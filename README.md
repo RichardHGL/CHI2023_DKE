@@ -16,7 +16,8 @@ The dazzling promises of AI systems to augment humans in various tasks hinge on 
 
 ## Data processing
 All user interaction data is anonymized, saved in anonymous_data/all_valid_data.csv.
-All tasks are saved in anonymous_data/selected_samples.csv
+All tasks are saved in anonymous_data/selected_samples.csv.
+
 Specifically, our data is preprocessed with functions in util.py in data_analysis folder.
 all_valid_data.csv have several types of keys to record different information:
 * user ID: username
