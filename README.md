@@ -36,7 +36,7 @@ Our main experimental results can be reimplemented with code in folder data_anal
 * Section 5.2.3 : analysis_H3_new.py
 * Section 5.2.4 : analysis_H4_new.py, analysis_H4_new_anova.py
 * Section 5.3   : analysis_DKE_new.py
-* Section 5.3   : analysis_trust_new.py
+* Section 5.4   : analysis_trust_new.py
 
 ## Web interface
 Our interface is implemented with Flask, you can refer to [this repo](https://github.com/LucieKuiper/Thesis) for more details.
